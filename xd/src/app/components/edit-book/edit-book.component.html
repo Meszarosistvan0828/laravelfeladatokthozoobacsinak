@@ -1,0 +1,14 @@
+<h2>Könyv szerkeztés</h2>
+<form [formGroup]="bookForm" (ngSubmit)="submit()">
+  <label>
+    Cím:
+    <input type="text" formControlName="title" />
+  </label>
+  <br />
+  <label>
+    Szerző:
+    <input type="text" formControlName="author" />
+  </label>
+  <br /><br />
+  <button type="submit">Szerkeztés</button>
+</form>

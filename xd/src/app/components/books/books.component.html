@@ -1,0 +1,7 @@
+<p *ngFor="let book of data"> 
+<span>{{book.id}} </span>
+<span>{{book.title}} </span>
+<span>{{book.author}}</span>
+<button (click)="editItem(book.id)">Szerkeztés</button>
+<button (click)="deleteItem(book.id)">Törlés</button>
+</p>
